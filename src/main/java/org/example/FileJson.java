@@ -66,5 +66,13 @@ public class FileJson {
         System.out.println("Запись сохранена.");
     }
 
+    public void delJson() {
+        data.put("toyCount", toyCount - 1);
+        writeFile();
+        toyCount = (long) data.get("toyCount");
+        System.out.println("Игрушка удалена.");
+        System.out.println("Запись сохранена.");
+    }
+
 
 }

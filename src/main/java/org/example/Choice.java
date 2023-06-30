@@ -16,9 +16,7 @@ public class Choice implements ViewInterface {
             case 2:
                 view.setFieldNum(2);
                 view.interface_2();
-//                printData.printJson();
                 printData.printJson();
-
                 view.setFieldNum(0);
                 break;
             case 3:
@@ -28,10 +26,13 @@ public class Choice implements ViewInterface {
                 } while (app.getFl1());
                 break;
             case 4:
-                do {
-                    view.setFieldNum(4);
-//                    choice_4(view.interface_4());
-                } while (app.getFl1());
+                view.setFieldNum(4);
+                view.interface_2();
+                view.setFieldNum(2);
+                view.interface_4();
+                printData.printJson();
+                addToy.delToy();
+                view.setFieldNum(0);
                 break;
             case 9:
                 app.endProg();

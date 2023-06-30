@@ -46,4 +46,8 @@ public class View implements ViewInterface{
         System.out.println(viewSign.SignField(getFieldNum()));
     }
 
+    public void interface_4() {
+        System.out.println(viewSign.SignField(getFieldNum()));
+    }
+
 }

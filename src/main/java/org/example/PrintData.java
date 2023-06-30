@@ -9,34 +9,15 @@ import java.util.Set;
 public class PrintData implements ViewInterface {
     Set<String> setData = new HashSet<>();
 
-//    public String[] arrayKey() {
-//        fileJson.readFile();
-//        String[] s = new String[fileJson.getData().size() - 1];
-//        int i = 0;
-//        for (Object o : fileJson.getData().keySet()) {
-//
-////            setData.add(o.toString());
-////            s[i] = o.toString();
-//
-//            if (!o.toString().equals("toyCount")) {
-//                s[i] = o.toString();
-//                i ++;
-//            }
-////            setData.remove("toyCount");
-////        System.out.println(listData);
-//        }
-//        return s;
-//    }
-
     public String[] arrayKey() {
         fileJson.readFile();
-        String[] s = new String[fileJson.getData().size()-1];
+        String[] s = new String[fileJson.getData().size() - 1];
         int i = 0;
         for (Object o : fileJson.getData().keySet()) {
             setData.add(o.toString());
             if (!o.toString().equals("toyCount")) {
                 s[i] = o.toString();
-                i ++;
+                i++;
             }
         }
         setData.remove("toyCount");
@@ -55,38 +36,13 @@ public class PrintData implements ViewInterface {
         System.out.println("\tЧастота выпадения игрушки: " + ((JSONObject) fileJson.getData().get(s)).get(frequency));
     }
 
-//    public void printJson() {
-//        String[] s = arrayKey().clone();
-//
-////        for (int i = 0; i < arrayKeyData.length; i++) {
-////            System.out.println((i+1) + ":  " + arrayKeyData[i]);
-////        }
-//        for (int i = 0; i < s.length; i++) {
-//            int r = i + 1;
-//            System.out.println(" -> " + s[i]);
-//            printJsonStructure(s[i], r);
-//        }
-////        for (int i = 0; i < setData.size(); i++) {
-////            int r = i + 1;
-////            printJsonStructure(arrayKeyData[i], r);
-////        }
-//        System.out.println("\t---------------------------------------------");
-//
-//    }
-
     public void printJson() {
-
-//        for (int i = 0; i < arrayKeyData.length; i++) {
-//            System.out.println((i+1) + ":  " + arrayKeyData[i]);
-//        }
         String[] s = arrayKey().clone();
-
         for (int i = 0; i < s.length; i++) {
             int r = i + 1;
             printJsonStructure(s[i], r);
         }
         System.out.println("\t---------------------------------------------");
-
     }
 
 }
