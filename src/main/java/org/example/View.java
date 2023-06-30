@@ -23,6 +23,7 @@ public class View implements ViewInterface{
         System.out.println("\tДобавление игрушек  - - - - - - - нажмите '1'");
         System.out.println("\tСписок игрушек  - - - - - - - - - нажмите '2'");
         System.out.println("\tРозыгрыш игрушек  - - - - - - - - нажмите '3'");
+        System.out.println("\tУдаление игрушек  - - - - - - - - нажмите '4'");
         System.out.println("\tВыход из программы  - - - - - - - нажмите '9'");
         return scann.scan_1();
     }
@@ -40,5 +41,9 @@ public class View implements ViewInterface{
         System.out.println(viewSign.SignField(getFieldNum()));
     }
 
+    public void interface_2() {
+        app.setFlag(true);
+        System.out.println(viewSign.SignField(getFieldNum()));
+    }
 
 }

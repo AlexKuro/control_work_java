@@ -1,6 +1,6 @@
 package org.example;
 
-public class Choice implements ViewInterface{
+public class Choice implements ViewInterface {
 
     public void choice_0(Integer n) {
         switch (n) {
@@ -14,15 +14,23 @@ public class Choice implements ViewInterface{
                 } while (app.getFl1());
                 break;
             case 2:
-                do {
-                    view.setFieldNum(11);
-//                    choice_2(view.interface_2());
-                } while (app.getFl1());
+                view.setFieldNum(2);
+                view.interface_2();
+//                printData.printJson();
+                printData.printJson();
+
+                view.setFieldNum(0);
                 break;
             case 3:
                 do {
-                    view.setFieldNum(4);
+                    view.setFieldNum(3);
 //                    choice_3(view.interface_3());
+                } while (app.getFl1());
+                break;
+            case 4:
+                do {
+                    view.setFieldNum(4);
+//                    choice_4(view.interface_4());
                 } while (app.getFl1());
                 break;
             case 9:

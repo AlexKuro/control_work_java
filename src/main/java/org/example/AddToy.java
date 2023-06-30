@@ -16,6 +16,7 @@ public class AddToy implements ViewInterface{
         dataS.put("text", scann.scan_3());
         dataS.put("frequency", scann.scan_4());
         fileJson.addJson(nameKey, dataS);
+//        System.out.println(dataS);
     }
 
 

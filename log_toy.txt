@@ -1,4 +1,4 @@
-июн. 25, 2023 11:43:46 PM org.example.Log setLogger
+июн. 30, 2023 7:24:05 AM org.example.Log setLogger
 INFO: Запуск программы 'Розыгрыш игрушек в магазине детских товаров'.
-июн. 25, 2023 11:44:07 PM org.example.Log setLogger
+июн. 30, 2023 7:29:48 AM org.example.Log setLogger
 INFO: Завершение программы 'Розыгрыш игрушек в магазине детских товаров'.

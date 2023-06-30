@@ -29,9 +29,16 @@ public class Scann implements ViewInterface{
             n =  stringScanner.nextLine();
             try{
                 Integer.valueOf(n);
-                fl = false;
+                Integer t = Integer.valueOf(n);
+                if (t > 0 & t < 101) {
+                    fl = false;
+                }
+                else {
+                    System.out.print("Формат ввода неверный! Введите цифры от 1 до 100\n");
+                }
+
             } catch (NumberFormatException e) {
-                System.out.print("Формат ввода неверный! Введите цифры от 0 до 100\n");
+                System.out.print("Формат ввода неверный! Введите цифры от 1 до 100\n");
             }
         } while (fl);
         return n;

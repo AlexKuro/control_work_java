@@ -12,6 +12,7 @@ public class App implements ViewInterface {
     private Boolean flag;
     private Boolean fl1 = true;
     public static void Start() {
+
         fileJson.fileDataJson();
         logToy.log();
         logToy.setLogger("Запуск программы 'Розыгрыш игрушек в магазине детских товаров'.");
@@ -38,6 +39,7 @@ public class App implements ViewInterface {
         stringScanner.close();
         setFlag(false);
         setFl1(false);
+
     }
 
 

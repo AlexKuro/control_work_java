@@ -14,6 +14,7 @@ public interface ViewInterface {
     FileJson fileJson = new FileJson();
     ViewSign viewSign = new ViewSign();
     AddToy addToy = new AddToy();
+    PrintData printData = new PrintData();
 
 
 
