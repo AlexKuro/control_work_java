@@ -15,7 +15,7 @@ import java.io.IOException;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class FileJson {
+public class FileJson implements ViewInterface{
 
     private long toyCount;
     private JSONObject data = new JSONObject();
@@ -33,6 +33,7 @@ public class FileJson {
                 readFile();
             }
         } catch (IOException e) {
+            logToy.setLogger("Ошибка при вводе/выводе данных из файла!");
             e.printStackTrace();
         }
         toyCount = (long) data.get("toyCount");
@@ -43,6 +44,7 @@ public class FileJson {
             JSONParser jsonParser = new JSONParser();
             data = (JSONObject) jsonParser.parse(reader);
         } catch (IOException | ParseException e) {
+            logToy.setLogger("Ошибка при вводе/выводе данных из файла!");
             e.printStackTrace();
         }
     }
@@ -51,6 +53,7 @@ public class FileJson {
         try (FileWriter fileWriter = new FileWriter(file)) {
             fileWriter.write(data.toJSONString());
         } catch (IOException e) {
+            logToy.setLogger("Ошибка при вводе/выводе данных из файла!");
             e.printStackTrace();
         }
     }
