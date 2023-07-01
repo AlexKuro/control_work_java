@@ -35,7 +35,7 @@ public class Choice implements ViewInterface {
                 toy.delToy();
                 view.setFieldNum(0);
             }
-            case 9 -> app.endProg();
+            case 9 -> app.endProgram();
             default -> System.out.print("Формат ввода неверный!\n");
         }
     }
@@ -52,7 +52,7 @@ public class Choice implements ViewInterface {
                     view.setFieldNum(0);
                 } while (app.getFl1());
             }
-            case 9 -> app.endProg();
+            case 9 -> app.endProgram();
             default -> System.out.print("Формат ввода неверный!\n");
         }
     }

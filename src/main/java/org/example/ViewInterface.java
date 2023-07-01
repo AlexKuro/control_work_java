@@ -6,7 +6,7 @@ public interface ViewInterface {
     App app = new App();
     Scanner intScanner = new Scanner(System.in);
     Scanner stringScanner = new Scanner(System.in);
-    Scann scann = new Scann();
+    Scans SCANS = new Scans();
     Log logToy = new Log();
     View view = new View();
     Choice choice = new Choice();

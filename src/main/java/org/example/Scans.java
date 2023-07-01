@@ -1,6 +1,6 @@
 package org.example;
 
-public class Scann implements ViewInterface {
+public class Scans implements ViewInterface {
 
     public Integer scan_1() {
         System.out.print("\nВведите число -> ");

@@ -10,17 +10,17 @@ public class Toy implements ViewInterface {
     public void addToy() {
         Map<String, Object> dataS = new HashMap<>();
         long id = idUnix.id();
-        String nameKey = "toy_" + String.valueOf(id);
+        String nameKey = "toy_" + id;
         dataS.put("id", id);
-        dataS.put("name", scann.scan_2());
-        dataS.put("text", scann.scan_3());
-        dataS.put("frequency", scann.scan_4());
+        dataS.put("name", SCANS.scan_2());
+        dataS.put("text", SCANS.scan_3());
+        dataS.put("frequency", SCANS.scan_4());
         fileJson.addJson(nameKey, dataS);
     }
 
     public void delToy() {
         String[] s = printData.arrayKey().clone();
-        int delNum = Integer.parseInt(scann.scan_5(s.length)) - 1;
+        int delNum = Integer.parseInt(SCANS.scan_5(s.length)) - 1;
         if (delNum != -1) {
             fileJson.getData().remove(s[delNum]);
             fileJson.delJson();
@@ -55,7 +55,9 @@ public class Toy implements ViewInterface {
         }
         else {
             System.out.println("\t-  Вы проиграли!  -");
-            System.out.println("\t---------------------------------------------\n");
+            System.out.println("\t---------------------------------------------");
         }
+        System.out.println("Порядковый номер игрушки c максимальной частотой выпадения -> " + positionB);
+        System.out.println("Случайное число от 1 до " + s.length + " -> " + randPosition + "\n");
     }
 }

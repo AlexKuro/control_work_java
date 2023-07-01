@@ -44,7 +44,7 @@ public class PrintData implements ViewInterface {
         System.out.println("\t---------------------------------------------");
     }
 
-    public Object structureJson(String s, String name){
+    public Object structureJson(String s, String name) {
         return ((JSONObject) fileJson.getData().get(s)).get(name);
     }
 

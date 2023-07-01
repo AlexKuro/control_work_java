@@ -12,7 +12,6 @@ public class App implements ViewInterface {
     private Boolean flag;
     private Boolean fl1 = true;
     public static void Start() {
-
         fileJson.fileDataJson();
         logToy.log();
         logToy.setLogger("Запуск программы 'Розыгрыш игрушек в магазине детских товаров'.");
@@ -32,7 +31,7 @@ public class App implements ViewInterface {
         return getFlag();
     }
 
-    public void endProg() {
+    public void endProgram() {
         System.out.print("Завершение программы 'Розыгрыш игрушек в магазине детских товаров'.\n\n");
         logToy.setLogger("Завершение программы 'Розыгрыш игрушек в магазине детских товаров'.");
         intScanner.close();

@@ -25,7 +25,7 @@ public class View implements ViewInterface{
         System.out.println("\tРозыгрыш игрушек  - - - - - - - - нажмите '3'");
         System.out.println("\tУдаление игрушек  - - - - - - - - нажмите '4'");
         System.out.println("\tВыход из программы  - - - - - - - нажмите '9'");
-        return scann.scan_1();
+        return SCANS.scan_1();
     }
 
     public Integer interface_main_1() {
@@ -33,7 +33,7 @@ public class View implements ViewInterface{
         System.out.println(viewSign.SignField(getFieldNum()));
         System.out.println("\tДобавление игрушек  - - - - - - - нажмите '1'");
         System.out.println("\tВыход из программы  - - - - - - - нажмите '9'");
-        return scann.scan_1();
+        return SCANS.scan_1();
     }
 
     public void interface_1() {
@@ -53,10 +53,10 @@ public class View implements ViewInterface{
         System.out.println("Чтобы выйграть игрушку должно выполнится два условия:");
         String s = "" +
                 "\t1. Выпадение максимальной частоты.\n" +
-                "\t2. Случайное выпадение числа с 1 до " + fileJson.getToyCount() +
-                "Если порядковый номер игрушки c максимальной частоты выпадения и случайное число совпадут, то ВЫ ВЫЙГРАЛИ!";
+                "\t2. Случайное выпадение числа с 1 до " + fileJson.getToyCount() + "." +
+                "\nЕсли порядковый номер игрушки c максимальной частотой выпадения и случайное число совпадут, то ВЫ ВЫЙГРАЛИ!";
         System.out.println(s);
-        System.out.println("\t-  Вы готовы? Начинаем!  -");
+        System.out.println("\t-  Начинаем!  -");
     }
 
     public void interface_4() {
