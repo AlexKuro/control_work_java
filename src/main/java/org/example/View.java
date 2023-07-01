@@ -46,6 +46,19 @@ public class View implements ViewInterface{
         System.out.println(viewSign.SignField(getFieldNum()));
     }
 
+    public void interface_3() {
+        app.setFlag(true);
+        System.out.println(viewSign.SignField(getFieldNum()));
+        System.out.print("Сегодня розыгрывается игрушек -> " + fileJson.getToyCount() + "\n");
+        System.out.println("Чтобы выйграть игрушку должно выполнится два условия:");
+        String s = "" +
+                "\t1. Выпадение максимальной частоты.\n" +
+                "\t2. Случайное выпадение числа с 1 до " + fileJson.getToyCount() +
+                "Если порядковый номер игрушки c максимальной частоты выпадения и случайное число совпадут, то ВЫ ВЫЙГРАЛИ!";
+        System.out.println(s);
+        System.out.println("\t-  Вы готовы? Начинаем!  -");
+    }
+
     public void interface_4() {
         System.out.println(viewSign.SignField(getFieldNum()));
     }

@@ -1,2 +1,2 @@
-июн. 30, 2023 8:48:46 PM org.example.Log setLogger
+июл. 01, 2023 2:03:11 PM org.example.Log setLogger
 INFO: Запуск программы 'Розыгрыш игрушек в магазине детских товаров'.

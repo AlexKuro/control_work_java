@@ -13,7 +13,7 @@ public interface ViewInterface {
     IdUnix idUnix = new IdUnix();
     FileJson fileJson = new FileJson();
     ViewSign viewSign = new ViewSign();
-    AddToy addToy = new AddToy();
+    Toy toy = new Toy();
     PrintData printData = new PrintData();
 
 

@@ -36,6 +36,18 @@ public class PrintData implements ViewInterface {
         System.out.println("\tЧастота выпадения игрушки: " + ((JSONObject) fileJson.getData().get(s)).get(frequency));
     }
 
+    public void printJsonStructure2(String s) {
+        String name = "name";
+        String text = "text";
+        System.out.println("\t         Название игрушки: " + ((JSONObject) fileJson.getData().get(s)).get(name));
+        System.out.println("\t         Описание игрушки: " + ((JSONObject) fileJson.getData().get(s)).get(text));
+        System.out.println("\t---------------------------------------------");
+    }
+
+    public Object structureJson(String s, String name){
+        return ((JSONObject) fileJson.getData().get(s)).get(name);
+    }
+
     public void printJson() {
         String[] s = arrayKey().clone();
         for (int i = 0; i < s.length; i++) {

@@ -39,7 +39,6 @@ public class App implements ViewInterface {
         stringScanner.close();
         setFlag(false);
         setFl1(false);
-
     }
 
 

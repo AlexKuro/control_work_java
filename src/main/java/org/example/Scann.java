@@ -4,20 +4,17 @@ public class Scann implements ViewInterface {
 
     public Integer scan_1() {
         System.out.print("\nВведите число -> ");
-        Integer n = intScanner.nextInt();
-        return n;
+        return intScanner.nextInt();
     }
 
     public String scan_2() {
         System.out.print("Введите название игрушки -> ");
-        String n = stringScanner.nextLine();
-        return n;
+        return stringScanner.nextLine();
     }
 
     public String scan_3() {
         System.out.print("Введите описание игрушки -> ");
-        String n = stringScanner.nextLine();
-        return n;
+        return stringScanner.nextLine();
     }
 
     public String scan_4() {
@@ -29,7 +26,7 @@ public class Scann implements ViewInterface {
             n = stringScanner.nextLine();
             try {
                 Integer.valueOf(n);
-                Integer t = Integer.valueOf(n);
+                int t = Integer.parseInt(n);
                 if (t > 0 & t < 101) {
                     fl = false;
                 } else {
@@ -54,7 +51,7 @@ public class Scann implements ViewInterface {
             n = stringScanner.nextLine();
             try {
                 Integer.valueOf(n);
-                Integer t = Integer.valueOf(n);
+                int t = Integer.parseInt(n);
                 if (t >= 0 & t <= num) {
                     fl = false;
                 } else {

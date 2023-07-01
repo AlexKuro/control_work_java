@@ -7,7 +7,10 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 @Data
 @AllArgsConstructor
@@ -19,7 +22,6 @@ public class FileJson {
     String pathProject = System.getProperty("user.dir");
     String pathFile = pathProject.concat("/file.json");
     File file = new File(pathFile);
-
 
     public void fileDataJson() {
         try {
@@ -40,11 +42,7 @@ public class FileJson {
         try (FileReader reader = new FileReader(file)) {
             JSONParser jsonParser = new JSONParser();
             data = (JSONObject) jsonParser.parse(reader);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
+        } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
     }
@@ -52,7 +50,6 @@ public class FileJson {
     public void writeFile() {
         try (FileWriter fileWriter = new FileWriter(file)) {
             fileWriter.write(data.toJSONString());
-//            fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -74,5 +71,10 @@ public class FileJson {
         System.out.println("Запись сохранена.");
     }
 
-
+    public void delRaffleJson() {
+        data.put("toyCount", toyCount - 1);
+        writeFile();
+        toyCount = (long) data.get("toyCount");
+        System.out.println("\tИгрушка перемещается к Вам!\n");
+    }
 }

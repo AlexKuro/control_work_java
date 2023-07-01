@@ -16,7 +16,7 @@ public class Log {
 
     public void log(){
 
-        FileHandler fh = null;
+        FileHandler fh;
 
         try {
             fh = new FileHandler("log_toy.txt");
