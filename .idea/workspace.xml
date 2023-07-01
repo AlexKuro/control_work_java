@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb91e153-990b-4aab-853c-3579251e3e42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.json" beforeDir="false" afterPath="$PROJECT_DIR$/file.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_toy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log_toy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Choice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PrintData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PrintData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Scann.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Scans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Toy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ViewInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Linux_задание_1.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
